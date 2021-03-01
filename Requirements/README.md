@@ -42,27 +42,27 @@ followers’ feeds. NULL entries not allowed.
 
 ### [Requirements List](https://github.com/mcforma/Zinger/blob/main/Requirements/Requirements%20List):
 
-1. The system will have display with option to click “log in” or “register”.
-  1.1. If user is a new user, they shall select “register”, else select “log in”.
-    1.1.1. If the user selects “log in”, then the system will prompt the user for their username and password and log the user in upon a valid check against the authentication service.
-    1.1.2. If the user selects “register”, they will be asked to provide basic information such as full name, date of birth, email address, display name, as well as creating a unique user handle, and a password that meets strong password requirements. 
-      1.1.2.1. The system will check if the requested user handle is unique. If true, user may continue, if false, reject user handle as unavailable.
-      1.1.2.2. The system will require that user must agree to the terms of service before submitting account registration request
-      1.1.2.3. The system will generate a unique user ID and send an email to the email address supplied by the user to verify their email address.
-      1.1.2.4. Upon verification the user will be able to log in as an existing user.
-    1.1.3. Upon a valid check of existing users supplied credentials against authentication server, user will log in.
-  1.2. The system shall have a home feed page.
-    1.2.1. The user shall be able to post “zings” which may contain text, images, emojis, video, or audio.
-    1.2.2. The home feed page shall be fed zings from users said user follows, as well as recommendations of people/accounts to follow.
-  1.3. The system shall allow user to search for other users and by hashtags in search bar. 
-  1.4. The system shall allow user to reset password, deactivate or delete account, or download account data.
-  1.5. The system shall allow user to see how many views their zings receive.
-  1.6. The system shall have a private messaging system.
-    1.6.1. The private messaging system shall allow one user to message another directly
-    1.6.2. The private messaging system shall have end-to-end encryption.
-2. The system shall save the data provided by users in the Zinger database.
-  2.1. The system shall provide a simple GUI similar to Twitter’s.
-  2.2. There will be a menu bar on the left side of the screen available on every page.
-  2.3. The user will input information via typing, text, or image, video, audio files.
-3. The system shall be developed using C#, T-SQL, and ASP.NET.
-  3.1. The system shall be hosted in GitHub and Azure.
+1. The system will have display with option to click “log in” or “register”.<br>
+  1.1. If user is a new user, they shall select “register”, else select “log in”.<br>
+    1.1.1. If the user selects “log in”, then the system will prompt the user for their username and password and log the user in upon a valid check against the authentication service.<br>
+    1.1.2. If the user selects “register”, they will be asked to provide basic information such as full name, date of birth, email address, display name, as well as creating a unique user handle, and a password that meets strong password requirements.<br>
+      1.1.2.1. The system will check if the requested user handle is unique. If true, user may continue, if false, reject user handle as unavailable.<br>
+      1.1.2.2. The system will require that user must agree to the terms of service before submitting account registration request.<br>
+      1.1.2.3. The system will generate a unique user ID and send an email to the email address supplied by the user to verify their email address.<br>
+      1.1.2.4. Upon verification the user will be able to log in as an existing user.<br>
+    1.1.3. Upon a valid check of existing users supplied credentials against authentication server, user will log in.<br>
+  1.2. The system shall have a home feed page.<br>
+    1.2.1. The user shall be able to post “zings” which may contain text, images, emojis, video, or audio.<br>
+    1.2.2. The home feed page shall be fed zings from users said user follows, as well as recommendations of people/accounts to follow.<br>
+  1.3. The system shall allow user to search for other users and by hashtags in search bar.<br>
+  1.4. The system shall allow user to reset password, deactivate or delete account, or download account data.<br>
+  1.5. The system shall allow user to see how many views their zings receive.<br>
+  1.6. The system shall have a private messaging system.<br>
+    1.6.1. The private messaging system shall allow one user to message another directly.<br>
+    1.6.2. The private messaging system shall have end-to-end encryption.<br>
+2. The system shall save the data provided by users in the Zinger database.<br>
+  2.1. The system shall provide a simple GUI similar to Twitter’s.<br>
+  2.2. There will be a menu bar on the left side of the screen available on every page.<br>
+  2.3. The user will input information via typing, text, or image, video, audio files.<br>
+3. The system shall be developed using C#, T-SQL, and ASP.NET.<br>
+  3.1. The system shall be hosted in GitHub and Azure.<br>
