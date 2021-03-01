@@ -1,14 +1,18 @@
-###[User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):
+### [User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):
 
-1. As a social person, I want a way to connect with my friends and family and meet new people so that we can interact socially when we can’t be together face-to-face (as with COVID-19).
+1. As a social person, I want a way to connect with my friends and family and meet new people so that we can interact 
+socially when we can’t be together face-to-face (as with COVID-19).
 
-2. As an employee of my company’s marketing division I need to ensure we have a wide social media presence so that we can garner a lot of views for advertisement.
+2. As an employee of my company’s marketing division I need to ensure we have a wide social media presence so that we can 
+garner a lot of views for advertisement.
 
-3. As a person who moved to another state to take a job, I want a way to see my friends and family’s posts and activity in my feed so that I can stay up to date with them.
+3. As a person who moved to another state to take a job, I want a way to see my friends and family’s posts and activity in 
+my feed so that I can stay up to date with them.
 
-4. As an active member in my extended family,I want a secure way to privately message my family so that our data is protected and remains in our own control.
+4. As an active member in my extended family,I want a secure way to privately message my family so that our data is protected 
+and remains in our own control.
 
-###[Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases):
+### [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases):
 
 1. Given a new user, allow the user to register for a new account by providing basic information including full name, date of birth, a unique user handle, 
 a display name.
@@ -34,17 +38,19 @@ followers’ feeds. NULL entries not allowed.
 10. Given a current user, allow user to see amount of views for their zings.
 
 
-###![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png)
+### Zinger Use Case Diagram ![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png)
 
-###[Requirements List](https://github.com/mcforma/Zinger/blob/main/Requirements/Requirements%20List):
+### [Requirements List](https://github.com/mcforma/Zinger/blob/main/Requirements/Requirements%20List):
 
 1. The system will have display with option to click “log in” or “register”.<br>
 
   1.1. If user is a new user, they shall select “register”, else select “log in”.<br>
 
-      1.1.1. If the user selects “log in”, then the system will prompt the user for their username and password and log the user in upon a valid check against the authentication service.<br>
+      1.1.1. If the user selects “log in”, then the system will prompt the user for their username and password and log the user in upon a valid check 
+      2.against the authentication service.<br>
 
-      1.1.2. If the user selects “register”, they will be asked to provide basic information such as full name, date of birth, email address, display name, as well as creating a unique user handle, and a password that meets strong password requirements.<br> 
+      1.1.2. If the user selects “register”, they will be asked to provide basic information such as full name, date of birth, email address, display name, 
+      as well as creating a unique user handle, and a password that meets strong password requirements.<br> 
 
           1.1.2.1. The system will check if the requested user handle is unique. If true, user may continue, if false, reject user handle as unavailable.<br>
 
