@@ -17,15 +17,18 @@ so that our data is protected and remains in our own control.
 [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases)
 Use cases:
 
-1. Given a new user, allow the user to register for a new account by providing basic information including full name, date of birth, a unique user handle, a display name.
+1. Given a new user, allow the user to register for a new account by providing basic information including full name, date of birth, a unique user handle, 
+a display name.
 2. Given a new user, allow user to create a password once they have provided account details during registration.
-3. Given a new user, upon account submission of account registration form and creation of a strong password, generate unique user ID and send registration verification email to user’s provided email address.
+3. Given a new user, upon account submission of account registration form and creation of a strong password, generate unique user ID and send registration 
+verification email to user’s provided email address.
 4. Given the current user, when the user is on their home feed, populate (at least some) of the content posted by the other users that they follow.
 5. Given the current user, make recommendations of who to follow in their home feed.
 6. Given the current user, allow user to search for other users or by hashtags in the search bar.
 7. Given the current user, allow them to reset their password and deactivate or delete their account in the settings page.
 8. Given the current user, allow user to send secure message from one user to another.
-9. Given an input from a user into the “new zing” text box, allow user to click “Zing” button and post the Zing to the user’s timeline and propagate out to followers’ feeds. NULL entries not allowed.
+9. Given an input from a user into the “new zing” text box, allow user to click “Zing” button and post the Zing to the user’s timeline and propagate out to 
+followers’ feeds. NULL entries not allowed.
 10. Given a current user, allow user to see amount of views for their zings.
 
 
