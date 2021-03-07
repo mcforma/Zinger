@@ -61,7 +61,8 @@ Create a social media application with private messaging capabilities in which u
 ![Settings](https://github.com/mcforma/Zinger/blob/main/Wireframe/Settings.png)
 
 # <a name="User-Stories"></a>
-#### <div align="Left"> User Stories</div> [User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):  [Return to Table of Contents](#table-of-contents)
+#### <div align="Left"> User Stories</div> [Return to Table of Contents](#table-of-contents)
+#### [User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):  
 
 1. As a social person, I want a way to connect with my friends and family and meet new people so that we can interact 
 socially when we can’t be together face-to-face (as with COVID-19).
@@ -76,7 +77,8 @@ my feed so that I can stay up to date with them.
 and remains under our own control.
 
 # <a name="Use-Cases"></a>
-##### <div align="Left"> Use Cases</div> [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases): [Return to Table of Contents](#table-of-contents)
+#### <div align="Left"> Use Cases</div> [Return to Table of Contents](#table-of-contents)
+#### [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases): 
 
 1. Given a new user, allow the user to register for a new account by providing basic information including full name, date of birth, a unique user handle, 
 a display name.
