@@ -1,67 +1,67 @@
 # Zinger
- ## [Table of Contents](####table-of-contents)
+ ## [Table of Contents](#table-of-contents)
  1) [Introduction](#Introduction)
  2) [Purpose](#Purpose)
- 3) [Database ERD](#Database ERD)
- 4) [Draft WireFrames](#Draft WireFrames)
- 5) [Login Page](#Login Page)
+ 3) [Database ERD](#Database-ERD)
+ 4) [Draft WireFrames](#Draft-WireFrames)
+ 5) [Login Page](#Login-Page)
  6) [Home](#Home)
- 7) [Profile Page](#Profile Page)
+ 7) [Profile Page](#Profile-Page)
  8) [Messages](#Messages)
  9) [Settings](#Settings)
- 10) [User Stories](#User Stories)
- 11) [Use Cases](#Use Cases)
- 12) [Zinger Use Case Diagram](#Zinger Use Case Diagram)
- 13) [Requirements List](#Requirements List)
- 14) [Test Table](#Test Table)
+ 10) [User Stories](#User-Stories)
+ 11) [Use Cases](#Use-Cases)
+ 12) [Zinger Use Case Diagram](#Zinger-Use-Case-Diagram)
+ 13) [Requirements List](#Requirements)
+ 14) [Test Table](#Test-Table)
 
 # <a name="Introduction"></a>
-#### <div align="Left"> Introduction</div>  [Return to Table of Contents](####table-of-contents)
+#### <div align="Left"> Introduction</div>  [Return to Table of Contents](#table-of-contents)
 
 Due to COVID-19, many people have had to change their routines and life habits. This includes social engagement. Online engagement through social media is becoming more of a modern public square to communicate and share ideas with one another. Furthermore, in recent years, the demand for secure messaging applications has spiked dramatically as awareness of hacking capability has increased. Coming from somewhat of a security background myself, I am interested to learn how to integrate end-to-end encryption in this application.
 
 # <a name="Purpose"></a>
-#### <div align="Left"> Purpose</div>  [Return to Table of Contents](####table-of-contents)
+#### <div align="Left"> Purpose</div>  [Return to Table of Contents](#table-of-contents)
 
 Create a social media application with private messaging capabilities in which users can create posts for their pages and engage with others in the new modern public square. The final product will have MFA and E2EE. Share your thoughts, links, videos, and images with your followers and be able to have conversations. _(This is basically a Twitter clone project)_.
 ***
 
-# <a name="Database ERD"></a>
-#### <div align="Left"> Database ERD</div>  [Return to Table of Contents](####table-of-contents)
+# <a name="Database-ERD"></a>
+#### <div align="Left"> Database ERD</div>  [Return to Table of Contents](#table-of-contents)
 ![Database ERD](https://github.com/mcforma/Zinger/blob/main/Database/Project%20Step%204%20-%20Zinger%20ERD.png)
 ---
 
-# <a name="Draft WireFrames"></a>
-#### <div align="Left"> Draft WireFrams</div>  [Return to Table of Contents](####table-of-contents)
+# <a name="Draft-WireFrames"></a>
+#### <div align="Left"> Draft WireFrams</div>  [Return to Table of Contents](#table-of-contents)
 ---
 
-# <a name="Login Page"></a>
-##### <div align="Left"> Login Page</div>  [Return to Table of Contents](####table-of-contents)
+# <a name="Login-Page"></a>
+##### <div align="Left"> Login Page</div>  [Return to Table of Contents](#table-of-contents)
 ![Login page](https://github.com/mcforma/Zinger/blob/main/Wireframe/Login.png)
 ---
 
 # <a name="Home"></a>
-##### <div align="Left"> Home</div>  [Return to Table of Contents](####table-of-contents)
+##### <div align="Left"> Home</div>  [Return to Table of Contents](#table-of-contents)
 ![Home](https://github.com/mcforma/Zinger/blob/main/Wireframe/Home.png)
 ---
 
 
-# <a name="Profile Page"></a>
-##### <div align="Left"> Profile Page</div>  [Return to Table of Contents](####table-of-contents)
+# <a name="Profile-Page"></a>
+##### <div align="Left"> Profile Page</div>  [Return to Table of Contents](#table-of-contents)
 ![Profile Page](https://github.com/mcforma/Zinger/blob/main/Wireframe/Profile.png)
 ---
 
 # <a name="Messages"></a>
-##### <div align="Left"> Messages</div>  [Return to Table of Contents](####table-of-contents)
+##### <div align="Left"> Messages</div>  [Return to Table of Contents](#table-of-contents)
 ![Messages](https://github.com/mcforma/Zinger/blob/main/Wireframe/Messages.png)
 ---
 
 # <a name="Settings"></a>
-##### <div align="Left"> Settings</div>  [Return to Table of Contents](####table-of-contents)
+##### <div align="Left"> Settings</div>  [Return to Table of Contents](#table-of-contents)
 ![Settings](https://github.com/mcforma/Zinger/blob/main/Wireframe/Settings.png)
 
-# <a name="User Stories"></a>
-#### <div align="Left"> User Stories</div> [User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):  [Return to Table of Contents](####table-of-contents)
+# <a name="User-Stories"></a>
+#### <div align="Left"> User Stories</div> [User Stories](https://github.com/mcforma/Zinger/blob/main/Requirements/User%20Stories):  [Return to Table of Contents](#table-of-contents)
 
 1. As a social person, I want a way to connect with my friends and family and meet new people so that we can interact 
 socially when we can’t be together face-to-face (as with COVID-19).
@@ -75,8 +75,8 @@ my feed so that I can stay up to date with them.
 4. As an active member in my extended family,I want a secure way to privately message my family so that our data is protected 
 and remains in our own control.
 
-# <a name="Use Cases"></a>
-##### <div align="Left"> Settings</div> [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases): [Return to Table of Contents](####table-of-contents)
+# <a name="Use-Cases"></a>
+##### <div align="Left"> Settings</div> [Use Cases](https://github.com/mcforma/Zinger/blob/main/Requirements/Use%20Cases): [Return to Table of Contents](#table-of-contents)
 
 1. Given a new user, allow the user to register for a new account by providing basic information including full name, date of birth, a unique user handle, 
 a display name.
@@ -101,11 +101,11 @@ followers’ feeds. NULL entries not allowed.
 
 10. Given a current user, allow user to see amount of views for their zings.
 
-# <a name="Zinger Use Case Diagram"></a>
-#### <div align="Left"> Zinger Use Case Diagram</div> Zinger Use Case Diagram ![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png) [Return to Table of Contents](####table-of-contents)
+# <a name="Zinger-Use-Case-Diagram"></a>
+#### <div align="Left"> Zinger Use Case Diagram</div> Zinger Use Case Diagram ![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png) [Return to Table of Contents](#table-of-contents)
 
 # <a name="Requirements"></a>
-##### <div align="Left"> Requirements</div>  [Return to Table of Contents](####table-of-contents)
+##### <div align="Left"> Requirements</div>  [Return to Table of Contents](#table-of-contents)
 ##### [Initial Requirements doc](https://github.com/mcforma/Zinger/blob/main/Requirements/Requirements%20List):
 
 1. The system will have display with option to click “log in” or “register”.<br>
