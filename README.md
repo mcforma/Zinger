@@ -103,7 +103,7 @@ followers’ feeds. NULL entries not allowed.
 
 
 # <a name="Zinger-Use-Case-Diagram"></a>
-#### <div align="Left"></div> [Return to Table of Contents](#table-of-contents)  ![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png)
+#### <div align="Left"> Zinger Use Case Diagram</div> [Return to Table of Contents](#table-of-contents)  ![Zinger Use Case Diagram](https://github.com/mcforma/Zinger/blob/main/Requirements/Zinger%20Use%20Case%20Diagram.png)
 
 
 # <a name="Requirements"></a>
