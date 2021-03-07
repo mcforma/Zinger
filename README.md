@@ -1,6 +1,22 @@
-# Zinger ReadMe
+# Zinger
+ ## [Table of Contents](####table-of-contents)
+ 1) [Introduction](#Introduction)
+ 2) [Purpose](#Purpose)
+ 3) [Database ERD](#Database ERD)
+ 4) [Draft WireFrames](#Draft WireFrames)
+ 5) [Login Page](#Login Page)
+ 6) [Home](#Home)
+ 7) [Profile Page](Profile Page)
+ 8) [Messages](#Messages)
+ 9) [Settings](#Settings)
+ 10) [User Stories](#User Stories)
+ 11) [Use Cases](#Use Cases)
+ 12) [Zinger Use Case Diagram](#Zinger Use Case Diagram)
+ 13) [Requirements List](#Requirements List)
+ 14) [Test Table](#Test Table)
 
-#### Introduction:
+# <a name="Introduction"></a>
+#### <div align="Left"> Introduction</div>  [Return to Table of Contents](####table-of-contents)
 
 Due to COVID-19, many people have had to change their routines and life habits. This includes social engagement. Online engagement through social media is becoming more of a modern public square to communicate and share ideas with one another. Furthermore, in recent years, the demand for secure messaging applications has spiked dramatically as awareness of hacking capability has increased. Coming from somewhat of a security background myself, I am interested to learn how to integrate end-to-end encryption in this application.
 
@@ -13,7 +29,7 @@ Create a social media application with private messaging capabilities in which u
 ![Database ERD](https://github.com/mcforma/Zinger/blob/main/Database/Project%20Step%204%20-%20Zinger%20ERD.png)
 ---
 
-#### Draft WireFrame
+#### Draft WireFrames
 ---
 
 ##### Login page
