@@ -14,6 +14,7 @@
  12) [Zinger Use Case Diagram](#Zinger-Use-Case-Diagram)
  13) [Requirements List](#Requirements)
  14) [Test Table](#Test-Table)
+ 15) [Prototype WIP](#Prototype)
 
 # <a name="Introduction"></a>
 #### <div align="Left"> Introduction</div>  [Return to Table of Contents](#table-of-contents)
@@ -159,4 +160,6 @@ followers’ feeds. NULL entries not allowed.
 | 11      | 1.6.2.0        | Check database to make sure messages are hashed from end-to-end encryption.                                                                                                    | Not Tested |  |
 | 12      | 2.2.0.0        | Ensure layout is appropriately modeled as per requirements (menu, GUI, et.).                                                                                                  | Not Tested |  |
 
-## [Prototype](https://xd.adobe.com/view/5f8f3c16-5ad5-4932-a015-a8dfd0dba23a-0adc/?fullscreen)
+# <a name="#Prototype"></a>
+## <div align="Left">Prototype WIP</div> [Return to Table of Contents](#table-of-contents)
+## [Prototype (Adobe XD)](https://xd.adobe.com/view/5f8f3c16-5ad5-4932-a015-a8dfd0dba23a-0adc/?fullscreen)
