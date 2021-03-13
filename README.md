@@ -162,4 +162,7 @@ followers’ feeds. NULL entries not allowed.
 
 # <a name="Prototype"></a>
 ## <div align="Left">Prototype WIP</div> [Return to Table of Contents](#table-of-contents)
-## [Prototype (Adobe XD)](https://xd.adobe.com/view/5f8f3c16-5ad5-4932-a015-a8dfd0dba23a-0adc/?fullscreen)
+## [Prototype (Adobe XD interactive)](https://xd.adobe.com/view/5f8f3c16-5ad5-4932-a015-a8dfd0dba23a-0adc/?fullscreen)
+
+## [Prototype PNGs](https://github.com/mcforma/Zinger/tree/main/Prototype)
+Here is the link to PNGs of the prototype, with descriptions of each page. At the bottom of the Prototype README, there is also a link to the Adobe XD interactive prototype that is linked above.
