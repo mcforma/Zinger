@@ -27,7 +27,7 @@ Due to COVID-19, many people have had to change their routines and life habits. 
 Create a social media application with private messaging capabilities in which users can create posts for their pages and engage with others in the new modern public square. The final product will have MFA and E2EE. Share your thoughts, links, videos, and images with your followers and be able to have conversations. _(This is basically a Twitter clone project)_.
 ***
 
-# <a name="Database-ERD"></a>
+# <a name="Database-ERD (DRAFT)"></a>
 #### <div align="Left"> Database ERD</div>  [Return to Table of Contents](#table-of-contents)
 ![Database ERD](https://github.com/mcforma/Zinger/blob/main/Database/Project%20Step%204%20-%20Zinger%20ERD.png)
 ---
