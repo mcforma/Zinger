@@ -169,6 +169,6 @@ followers’ feeds. NULL entries not allowed.
 Here is the link to PNGs of the prototype, with descriptions of each page. At the bottom of the Prototype README, there is also a link to the Adobe XD interactive prototype that is linked above.
 
 # <a name="DBD-WIP"></a>
-##### <div align="Left">Database Diagram WIP</div>  [Return to Table of Contents](#table-of-contents)
+#### <div align="Left">Database Diagram WIP</div>  [Return to Table of Contents](#table-of-contents)
 ![Database Diagram WIP](https://github.com/mcforma/Zinger/blob/main/Images/Project%20Step%2011%20-%20DBD.png)
 ---
