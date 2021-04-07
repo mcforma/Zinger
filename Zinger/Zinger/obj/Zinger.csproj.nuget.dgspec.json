@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj": {}
+    "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj": {
+    "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj",
+        "projectUniqueName": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "projectName": "Zinger",
-        "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj",
+        "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "packagesPath": "C:\\Users\\matta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\obj\\",
+        "outputPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

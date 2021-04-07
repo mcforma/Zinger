@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ixGM3TBu3Arf16Te9v+SpHcLGsYhIDkR7DAiQshIfIxga5WdR6jUrGe1v3nF1ytMy8jzxaN7bfIS4GlcwglUEQ==",
+  "dgSpecHash": "CEXp+szGaAltKjRmFKCygnnOoX3IRl1pUhkYfYUKuRBlHKqvhHq6U+yFR7wMMvUSUJaF0V7kfDncrotfsTGnGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
+  "projectFilePath": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matta\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",

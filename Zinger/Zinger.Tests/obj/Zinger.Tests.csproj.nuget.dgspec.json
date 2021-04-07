@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {}
+    "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {
+    "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
+        "projectUniqueName": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
         "projectName": "Zinger.Tests",
-        "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
+        "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
         "packagesPath": "C:\\Users\\matta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger.Tests\\obj\\",
+        "outputPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj": {
-                "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj"
+              "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
+                "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj"
               }
             }
           }
@@ -118,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj": {
+    "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj",
+        "projectUniqueName": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "projectName": "Zinger",
-        "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.csproj",
+        "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "packagesPath": "C:\\Users\\matta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\obj\\",
+        "outputPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
