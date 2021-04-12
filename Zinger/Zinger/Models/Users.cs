@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
@@ -7,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Zinger.Models
 {
+    [Index(nameof(User_Handle), IsUnique = true)]
     public class Users
     {
         [Key]
         [Display(Name = "User ID")]
         public int U_ID { get; set; }
         
-
         [Display(Name = "User Handle")]
         [Required]
         [StringLength(15, MinimumLength = 4, ErrorMessage = "User Handle must be 4 - 15 characters")]
