@@ -31,8 +31,5 @@ namespace Zinger.Data
             modelBuilder.Entity<ZingersHashtags>()
                 .HasKey(zh => new { zh.Zinger_ID, zh.Hashtag });
         }
-
-
-
     }
 }
