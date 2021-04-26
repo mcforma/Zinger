@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {}
+    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {
+    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
         "projectName": "Zinger.Tests",
-        "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
+        "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.Tests\\Zinger.Tests.csproj",
         "packagesPath": "C:\\Users\\matta\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger.Tests\\obj\\",
+        "outputPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
-                "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj"
+              "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
+                "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj"
               }
             }
           }
@@ -53,6 +53,14 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[5.10.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -118,14 +126,14 @@
         }
       }
     },
-    "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
+    "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
+        "projectUniqueName": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "projectName": "Zinger",
-        "projectPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
+        "projectPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
         "packagesPath": "C:\\Users\\matta\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\Zinger\\Zinger\\Zinger\\obj\\",
+        "outputPath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -163,6 +171,14 @@
             "FluentAssertions": {
               "target": "Package",
               "version": "[5.10.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",

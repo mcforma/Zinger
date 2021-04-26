@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using Zinger.Models;
 
 namespace Zinger.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -24,12 +25,17 @@ namespace Zinger.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<UsersZingers>()
                 .HasKey(uz => new { uz.U_ID, uz.Zinger_ID });
             modelBuilder.Entity<ZingersZinger_Replies>()
                 .HasKey(zzr => new { zzr.Zinger_ID, zzr.Replying_Zinger_ID });
             modelBuilder.Entity<ZingersHashtags>()
                 .HasKey(zh => new { zh.Zinger_ID, zh.Hashtag });
+
+            modelBuilder.Seed(); //Seed more data in Extension class if desired
+
         }
     }
 }

@@ -48,7 +48,7 @@ namespace Zinger.Models
         [Display(Name = "Password")]
         [Required]
         [DataType(DataType.Password)]
-        [StringLength(40, MinimumLength = 4, ErrorMessage = "Password must be between 4 and 40 characters")]
+        [StringLength(40, MinimumLength = 8, ErrorMessage = "Password must be between 8 and 40 characters")]
         public string Pass_word { get; set; }
         
         [Display(Name = "Email Address")]
