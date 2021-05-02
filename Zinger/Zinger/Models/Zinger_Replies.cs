@@ -12,9 +12,15 @@ namespace Zinger.Models
         [Display(Name = "Replying Zinger ID")]
         public int Replying_Zinger_ID { get; set; }
 
+        //[Display(Name = "Original Zinger ID")]
+        //[Required]
+        //public int Zinger_ID { get; set; }
+        //public Zingers Zingers { get; set; }
+
         [Required]
         [Display(Name = "Replying User ID")]
         public int Replying_U_ID { get; set; }
+        public ApplicationUser Id { get; set; }
 
         [Required]
         [Display(Name = "Zinger Reply Content")]

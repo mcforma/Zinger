@@ -12,9 +12,9 @@ namespace Zinger.Models
         [StringLength(400, ErrorMessage = "Hashtag must be no more than 400 characters")]
         public string Hashtag { get; set; }
 
-        [Required]
-        [Display(Name = "Zinger ID")]
-        public int Zinger_ID { get; set; }
+        //[Required]
+        //[Display(Name = "Zinger ID")]
+        //public int Zinger_ID { get; set; }
 
         public IList<ZingersHashtags> ZingersHashtags { get; set; }
     }

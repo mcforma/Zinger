@@ -37,23 +37,6 @@ namespace Zinger.Controllers
             return View();
         }
 
-        //TO DO: Consider removing. Likely unnecessary
-        //[AcceptVerbs("Get", "Post")]
-        //[AllowAnonymous]
-        //public async Task<IActionResult> IsEmailInUse(string email)
-        //{
-        //    var emailAddress = await userManager.FindByEmailAsync(email);
-
-        //    if(emailAddress == null)
-        //    {
-        //        return Json(true);
-        //    }
-        //    else
-        //    {
-        //        return Json($"Email {email} is already in use");
-        //    }
-        //}
-
         [AcceptVerbs("Get", "Post")]
         [AllowAnonymous]
         public async Task<IActionResult> IsUser_HandleInUse(string user_handle)

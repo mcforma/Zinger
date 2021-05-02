@@ -80,7 +80,7 @@ namespace Zinger.Controllers
             {
                 if(await userManager.IsInRoleAsync(user, role.Name))
                 {
-                    model.Users.Add(user.User_Handle);
+                    model.Users.Add(user.UserName);
                 }
             }
 
@@ -135,7 +135,7 @@ namespace Zinger.Controllers
                 var userRoleViewModel = new UserRoleViewModel
                 {
                     UserId = user.Id,
-                    User_Handle = user.User_Handle
+                    User_Handle = user.UserName
                 };
 
                 if (await userManager.IsInRoleAsync(user, role.Name))

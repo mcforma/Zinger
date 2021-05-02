@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Zinger.Models;
 
 namespace Zinger.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210501233203_UsersZingersFKFix")]
+    partial class UsersZingersFKFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -236,9 +238,9 @@ namespace Zinger.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "13ab1180-6043-4dc7-9c52-a405cea3aad6",
+                            Id = "93c872c0-4bf0-486f-b69e-e1ef490eec18",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ea5dc29e-327c-4c91-8f99-23d4f81e5175",
+                            ConcurrencyStamp = "e59695d8-92a2-4d61-8aa1-2ede4927a170",
                             Date_of_Birth = new DateTime(1986, 5, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Display_Name = "Jonny5",
                             Email = "jonny5@number5.com",
@@ -249,7 +251,7 @@ namespace Zinger.Migrations
                             Middle_Name = "",
                             PasswordHash = "P@$$W0rd",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "44f19d8a-92d1-4351-ae1a-7abd3cc555ea",
+                            SecurityStamp = "8f6eff09-8610-459d-88f8-5ab6188dec8c",
                             TwoFactorEnabled = false,
                             UserName = "@Number5"
                         });
@@ -260,6 +262,9 @@ namespace Zinger.Migrations
                     b.Property<string>("Hashtag")
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
+
+                    b.Property<int>("Zinger_ID")
+                        .HasColumnType("int");
 
                     b.HasKey("Hashtag");
 
@@ -281,6 +286,39 @@ namespace Zinger.Migrations
                     b.ToTable("UsersZingers");
                 });
 
+            modelBuilder.Entity("Zinger.Models.Zinger_Replies", b =>
+                {
+                    b.Property<int>("Replying_Zinger_ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTimeOffset>("Date_Time_Stamp")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("Replying_U_ID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("Zinger_ID1")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Zinger_Reply_Content")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.HasKey("Replying_Zinger_ID");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("Zinger_ID1");
+
+                    b.ToTable("Zinger_Replies");
+                });
+
             modelBuilder.Entity("Zinger.Models.Zingers", b =>
                 {
                     b.Property<int>("Zinger_ID")
@@ -295,17 +333,12 @@ namespace Zinger.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
 
-                    b.Property<int?>("Replying_Zinger_ID")
-                        .HasColumnType("int");
-
                     b.Property<string>("Zinger_Content")
                         .IsRequired()
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
 
                     b.HasKey("Zinger_ID");
-
-                    b.HasIndex("Replying_Zinger_ID");
 
                     b.ToTable("Zingers");
                 });
@@ -319,11 +352,42 @@ namespace Zinger.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar(400)");
 
+                    b.Property<string>("HashtagsHashtag")
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<int?>("Zingers_IDZinger_ID")
+                        .HasColumnType("int");
+
                     b.HasKey("Zinger_ID", "Hashtag");
 
-                    b.HasIndex("Hashtag");
+                    b.HasIndex("HashtagsHashtag");
+
+                    b.HasIndex("Zingers_IDZinger_ID");
 
                     b.ToTable("ZingersHashtags");
+                });
+
+            modelBuilder.Entity("Zinger.Models.ZingersZinger_Replies", b =>
+                {
+                    b.Property<int>("Zinger_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Replying_Zinger_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Zinger_RepliesReplying_Zinger_ID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ZingersZinger_ID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Zinger_ID", "Replying_Zinger_ID");
+
+                    b.HasIndex("Zinger_RepliesReplying_Zinger_ID");
+
+                    b.HasIndex("ZingersZinger_ID");
+
+                    b.ToTable("ZingersZinger_Replies");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -396,30 +460,47 @@ namespace Zinger.Migrations
                     b.Navigation("Zingers");
                 });
 
-            modelBuilder.Entity("Zinger.Models.Zingers", b =>
+            modelBuilder.Entity("Zinger.Models.Zinger_Replies", b =>
                 {
-                    b.HasOne("Zinger.Models.Zingers", "Zinger")
-                        .WithMany("Replying_Zinger_IDs")
-                        .HasForeignKey("Replying_Zinger_ID");
+                    b.HasOne("Zinger.Models.ApplicationUser", "User")
+                        .WithMany("Zinger_Replies")
+                        .HasForeignKey("UserId");
 
-                    b.Navigation("Zinger");
+                    b.HasOne("Zinger.Models.Zingers", "Zinger_ID")
+                        .WithMany()
+                        .HasForeignKey("Zinger_ID1");
+
+                    b.Navigation("User");
+
+                    b.Navigation("Zinger_ID");
                 });
 
             modelBuilder.Entity("Zinger.Models.ZingersHashtags", b =>
                 {
                     b.HasOne("Zinger.Models.Hashtags", "Hashtags")
                         .WithMany("ZingersHashtags")
-                        .HasForeignKey("Hashtag")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("HashtagsHashtag");
 
-                    b.HasOne("Zinger.Models.Zingers", "Zingers")
+                    b.HasOne("Zinger.Models.Zingers", "Zingers_ID")
                         .WithMany("ZingersHashtags")
-                        .HasForeignKey("Zinger_ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Zingers_IDZinger_ID");
 
                     b.Navigation("Hashtags");
+
+                    b.Navigation("Zingers_ID");
+                });
+
+            modelBuilder.Entity("Zinger.Models.ZingersZinger_Replies", b =>
+                {
+                    b.HasOne("Zinger.Models.Zinger_Replies", "Zinger_Replies")
+                        .WithMany("ZingersZinger_Replies")
+                        .HasForeignKey("Zinger_RepliesReplying_Zinger_ID");
+
+                    b.HasOne("Zinger.Models.Zingers", "Zingers")
+                        .WithMany("ZingersZinger_Replies")
+                        .HasForeignKey("ZingersZinger_ID");
+
+                    b.Navigation("Zinger_Replies");
 
                     b.Navigation("Zingers");
                 });
@@ -427,6 +508,8 @@ namespace Zinger.Migrations
             modelBuilder.Entity("Zinger.Models.ApplicationUser", b =>
                 {
                     b.Navigation("UsersZingers");
+
+                    b.Navigation("Zinger_Replies");
                 });
 
             modelBuilder.Entity("Zinger.Models.Hashtags", b =>
@@ -434,13 +517,18 @@ namespace Zinger.Migrations
                     b.Navigation("ZingersHashtags");
                 });
 
+            modelBuilder.Entity("Zinger.Models.Zinger_Replies", b =>
+                {
+                    b.Navigation("ZingersZinger_Replies");
+                });
+
             modelBuilder.Entity("Zinger.Models.Zingers", b =>
                 {
-                    b.Navigation("Replying_Zinger_IDs");
-
                     b.Navigation("UsersZingers");
 
                     b.Navigation("ZingersHashtags");
+
+                    b.Navigation("ZingersZinger_Replies");
                 });
 #pragma warning restore 612, 618
         }

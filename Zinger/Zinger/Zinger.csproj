@@ -6,6 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Zinger_Replies\**" />
+    <Content Remove="Views\Zinger_Replies\**" />
+    <EmbeddedResource Remove="Views\Zinger_Replies\**" />
+    <None Remove="Views\Zinger_Replies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Zinger_RepliesController.cs" />
+    <Compile Remove="Models\ZingersZinger_Replies.cs" />
+    <Compile Remove="Models\Zinger_Replies.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="FluentValidation" Version="10.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.4" />

@@ -11,8 +11,8 @@ namespace Zinger.Models
     {
         [Required]
         [Display(Name = "User ID")]
-        public int U_ID { get; set; }
-        public Users Users { get; set; }
+        public string Id { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
         
         [Required]
         [Display(Name = "Zinger ID")]
