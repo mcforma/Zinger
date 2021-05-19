@@ -1350,7 +1350,6 @@ C:\Users\matta\source\repos\Zinger\Zinger\Zinger\bin\Debug\net5.0\NLog.Web.AspNe
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\bin\Debug\net5.0\libman.json
-C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Shared\Layout.cshtml.g.cs
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Admin\ListUsers.cshtml.g.cs
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger\obj\Debug\net5.0\Razor\Views\Admin\EditUser.cshtml.g.cs
