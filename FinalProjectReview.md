@@ -22,11 +22,11 @@ posted them in any fashion (either via UserId or UserName), the layout/UI is bas
 
 **Where were you lucky?**
 
-I'm not sure there's really a best answer to this question. My database is functional. Identity is mostly complete. I have something to present even though its not really anywhere near what I would have liked. Class mates were very helpful, and without them I probably wouldn't have gotten anything off the ground. 
+I'm not sure there's really a best answer to this question. My database is functional. Identity is mostly complete. I have something to present even though its not really anywhere near what I would have liked. Classmates were very helpful, and without them I probably would have even less done.
 
 **What would you change / what do you know now that you wish you knew "then"?**
 
-I would have chosen a much more simple and smaller project.
+I would have chosen a much more simple and smaller project. I also probably should have asked for more help from my peers.
 
 **What is next?**
 
