@@ -17,8 +17,7 @@ My database is functional, and I built it using code first, so that's pretty coo
 **What did you do wrong?**
 
 Well, the biggest mistake I made which had a tremendous domino effect on my project was not choosing an appropriate scope. Looking back now, it seems pretty rediculous to have attempted
-to make something as robust as a Twitter clone when I came into this class knowing nothing. At the moment my project is basically nonfunctional. You can create Zingers, but can't relate to who
-posted them in any fashion (either via UserId or UserName), the layout/UI is basic. The only thing that is mostly working is Identity. I got hung up on stuff for too long when it wasn't working (e.g. manage user form). At this point the project is very unfinished.
+to make something as robust as a Twitter clone when I came into this class knowing nothing. At the moment my project is not even technically a MVP, as you cannot see who creates what Zingers and the individualized user home pages have not even begun to be implemented. The layout/UI is very basic. The only thing that is mostly working is Identity. I got hung up on stuff for too long when it wasn't working (e.g. manage user form). At this point the project is very unfinished.
 
 **Where were you lucky?**
 
