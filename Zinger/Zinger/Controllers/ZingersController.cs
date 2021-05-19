@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Zinger.Models;
+using Microsoft.Extensions.Logging;
 using Zinger.Models;
 
 namespace Zinger.Controllers
@@ -15,10 +16,19 @@ namespace Zinger.Controllers
     public class ZingersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly RoleManager<IdentityRole> roleManager;
+        private readonly UserManager<ApplicationUser> userManager;
+        private readonly ILogger<AdminController> logger;
 
-        public ZingersController(ApplicationDbContext context)
+        public ZingersController(ApplicationDbContext context, 
+                               RoleManager<IdentityRole> roleManager,
+                               UserManager<ApplicationUser> userManager,
+                               ILogger<AdminController> logger)
         {
             _context = context;
+            this.roleManager = roleManager;
+            this.userManager = userManager;
+            this.logger = logger;
         }
 
         // GET: Zingers
@@ -58,8 +68,9 @@ namespace Zinger.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Zinger_ID,Hashtag,Zinger_Content,Date_Time_Stamp")] Zingers zingers)
+        public async Task<IActionResult> Create([Bind("Zinger_ID, ApplicationUserId, Replying_Zinger_ID, Hashtag,Zinger_Content,Date_Time_Stamp")] Zingers zingers, string userId)
         {
+
             if (ModelState.IsValid)
             {
                 _context.Add(zingers);

@@ -1006,3 +1006,8 @@ C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\obj\Debug\net5.0\ref\Zing
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\obj\Debug\net5.0\Zinger.Tests.pdb
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\obj\Debug\net5.0\Zinger.Tests.genruntimeconfig.cache
 C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\nlog.config
+C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\libman.json
+C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\NLog.dll
+C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\matta\source\repos\Zinger\Zinger\Zinger.Tests\bin\Debug\net5.0\NLog.Web.AspNetCore.dll

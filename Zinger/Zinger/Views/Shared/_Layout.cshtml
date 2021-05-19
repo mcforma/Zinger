@@ -1,5 +1,7 @@
 ﻿@inject SignInManager<ApplicationUser> signInManager;
 
+<!--Original _Layout-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +18,16 @@
         <link rel="stylesheet"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
               crossorigin="anonymous"
-              href="https://sstackpath.bootstrapcdn.com/bootstrap/4.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position"
               asp-fallback-test-value="absolute"
-              asp-suppress-fallback-integrity="true" />
+              asp-suppress-fallback-integrity="true">
+
+        @*<script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
     </environment>
     <title>@ViewData["Title"] - Zinger</title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
@@ -28,27 +35,41 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Zinger</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <nav class="navbar-collapse collapse d-lg-inline-flex justify-content-between" id="navbarSupportedContent">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Zingers" asp-action="Index">Zingers Home</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Zingers" asp-action="Index">Zingers</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Zinger_Replies" asp-action="Index">Zinger Replies Home</a>
-                        </li>
+                        @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Manage
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Admin"
+                                           asp-action="ListUsers">Users</a>
+                                        <a class="dropdown-item" asp-controller="Admin"
+                                           asp-action="ListRoles">Roles</a>
+                                </div>
+                            </li>
+
+                        }
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         @if (signInManager.IsSignedIn(User))
@@ -75,7 +96,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="CreateRole">Create Role</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </nav>
     </header>
@@ -90,9 +111,13 @@
             &copy; 2021 - Zinger - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @if (IsSectionDefined("Scripts"))
+    {
+        @await RenderSectionAsync("Scripts", required: false)
+    }
+
 </body>
 </html>

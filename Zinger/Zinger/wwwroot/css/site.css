@@ -58,6 +58,11 @@ html {
   min-height: 100%;
 }
 
+ul.nobullets {
+    list-style-type: none;
+}
+
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;

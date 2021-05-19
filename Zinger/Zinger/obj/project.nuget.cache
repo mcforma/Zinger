@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kXogNu2EJgvBxfPyY4/KTfsgRAkvxSFvrzUrYW2KrbMg3B6eZSaliuA+h/Rkd1Y6SXkmbqrqfA2Osx3PA7SgCQ==",
+  "dgSpecHash": "XtnN+miEOkyKuFO6e6n/K7KvsblmXsqZ/6LOBCbDwD+fNG+BFqjz1e1Y9w5ifTPTaDy/dNbaQX2OBKPKLmJ13w==",
   "success": true,
   "projectFilePath": "C:\\Users\\matta\\source\\repos\\Zinger\\Zinger\\Zinger\\Zinger.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,9 @@
     "C:\\Users\\matta\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\matta\\.nuget\\packages\\nlog\\4.7.9\\nlog.4.7.9.nupkg.sha512",
+    "C:\\Users\\matta\\.nuget\\packages\\nlog.extensions.logging\\1.7.2\\nlog.extensions.logging.1.7.2.nupkg.sha512",
+    "C:\\Users\\matta\\.nuget\\packages\\nlog.web.aspnetcore\\4.12.0\\nlog.web.aspnetcore.4.12.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\matta\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

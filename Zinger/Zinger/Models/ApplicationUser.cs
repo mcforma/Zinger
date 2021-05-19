@@ -14,17 +14,21 @@ namespace Zinger.Models
         [Required]
         [Display(Name = "User Handle")]
         public override string UserName { get; set; }
+        [Required]
         public string First_Name { get; set; }
+        [Required]
         public string Last_Name { get; set; }
         public string Middle_Name { get; set; }
+        [Required]
         public string Display_Name { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime Date_of_Birth { get; set; }
 
-        public IList<UsersZingers> UsersZingers { get; set; }
+        public IList<Zingers> Zingers { get; set; }
         //public IList<Zinger_Replies> Zinger_Replies { get; set; }
-        //public IList<Followers> Followers { get; set; }
+        public IList<Followers> Follower { get; set; }
+        public IList<Followers> Followee { get; set; }
 
     }
 }

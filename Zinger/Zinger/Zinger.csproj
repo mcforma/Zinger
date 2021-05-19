@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\Zinger_RepliesController.cs" />
+    <Compile Remove="Models\UsersZingers.cs" />
     <Compile Remove="Models\ZingersZinger_Replies.cs" />
     <Compile Remove="Models\Zinger_Replies.cs" />
   </ItemGroup>
@@ -33,7 +34,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.12.0" />
   </ItemGroup>
 
   <ItemGroup>

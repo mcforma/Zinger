@@ -1,0 +1,112 @@
+﻿@inject SignInManager<ApplicationUser> signInManager;
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <environment include="Development">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.6/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
+    <title>@ViewData["Title"] - Zinger</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/layout.css" />
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav class="TopNavBar">
+            <div class="navigation">
+                <ul class=nav-list>
+                    <li class="top-links"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="top-links"><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                    <li class="top-links"><a href="#">About</a></li>
+                    <li class="top-links"><a href="#">Contact us</a></li>
+                    @*@if (signInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <form method="post" asp-action="logout" asp-controller="Account">
+                                <button type="submit" class="nav-link btn btn-link py-0"
+                                        style="width:auto">
+                                    Logout @User.Identity.Name
+                                </button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="CreateRole">Create Role</a>
+                    </li>*@
+                </ul>
+            </div>
+            <div class="header">
+                <a href="#">INSERT PAGE LOGO HERE</a>
+            </div>
+        </nav>
+        <div class="sideNav">
+            <ul class="sideNav-links">
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Explore</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Notifications</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Messages</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Bookmarks</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class =link-text>Profile</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>More</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Zing</span></a></li>
+            </ul>
+            <div class="profilepic">
+                <a href="#"><img src="https://source.unsplash.com/random" alt=""></a>
+            </div>
+        </div>
+
+
+        <main class="Main-Content">
+            <!-- here here here here here here here here here here here here here -->
+            @RenderBody()
+            <!-- here here here here here here here here here here here here here -->
+        </main>
+
+        <div class="sideMenu">
+            <ul class="sideNav-links">
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Home</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Explore</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Notifications</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Messages</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Bookmarks</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class =link-text>Profile</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>More</span></a></li>
+                <li class="side-links"><a class="btn btn-primary" href="#" role="button"><span class=link-text>Zing</span></a></li>
+            </ul>
+        </div>
+
+        <div class="Footer">
+            <p> &copy; your footer information here </p>
+        </div>
+    </div>
+</body>
+
+</html>

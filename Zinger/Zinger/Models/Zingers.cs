@@ -16,6 +16,10 @@ namespace Zinger.Models
         public int Zinger_ID { get; set; }
 
         [AllowNull]
+        [Display(Name = "User ID")]
+        public ApplicationUser ApplicationUser { get; set; }
+
+        [AllowNull]
         [Display(Name = "Replying Zinger ID")]
         [ForeignKey("Zinger_ID")]
         public int? Replying_Zinger_ID { get; set; }
@@ -35,7 +39,7 @@ namespace Zinger.Models
         [DataType(DataType.DateTime)]
         public DateTimeOffset Date_Time_Stamp { get; set; } = DateTimeOffset.Now;
 
-        public IList<UsersZingers> UsersZingers { get; set; }
+        //public IList<UsersZingers> UsersZingers { get; set; }
         //public IList<ZingersZinger_Replies> ZingersZinger_Replies { get; set; }
         public IList<ZingersHashtags> ZingersHashtags { get; set; }
         //public IList<Zinger_Replies> Zinger_Replies { get; set; }
@@ -45,3 +49,4 @@ namespace Zinger.Models
 
     }
 }
+//

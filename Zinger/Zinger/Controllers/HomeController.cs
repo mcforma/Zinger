@@ -28,6 +28,7 @@ namespace Zinger.Controllers
         [AllowAnonymous]
         public IActionResult Privacy()
         {
+            //throw new Exception("Self-generated");
             return View();
         }
 

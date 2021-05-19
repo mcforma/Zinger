@@ -9,11 +9,11 @@ namespace Zinger.Models
     {
         IQueryable<ApplicationUser> ApplicationUser { get; }
         IQueryable<Zingers> Zingers { get; }
-        IQueryable<UsersZingers> UsersZingers { get; }
+        //IQueryable<UsersZingers> UsersZingers { get; }
         //IQueryable<Zinger_Replies> Zinger_Replies { get; }
         IQueryable<Hashtags> Hashtags { get; }
         IQueryable<ZingersHashtags> ZingersHashtags { get; }
         //IQueryable<ZingersZinger_Replies> ZingersZinger_Replies { get; }
-        //IQueryable<Followers> Followers { get; }
+        IQueryable<Followers> Followers { get; }
     }
 }

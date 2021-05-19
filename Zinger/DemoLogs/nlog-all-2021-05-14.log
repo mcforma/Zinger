@@ -1,0 +1,18 @@
+2021-05-14 21:37:45.9939|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Followers] (
+    [FollowerUserId] nvarchar(450) NOT NULL,
+    [FollowedUserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Followers] PRIMARY KEY ([FollowerUserId], [FollowedUserId]),
+    CONSTRAINT [FK_Followers_AspNetUsers_FollowedUserId] FOREIGN KEY ([FollowedUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Followers_AspNetUsers_FollowerUserId] FOREIGN KEY ([FollowerUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2021-05-14 21:46:02.8023|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Followers] (
+    [FollowerUserId] nvarchar(450) NOT NULL,
+    [FollowedUserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_Followers] PRIMARY KEY ([FollowerUserId], [FollowedUserId]),
+    CONSTRAINT [FK_Followers_AspNetUsers_FollowedUserId] FOREIGN KEY ([FollowedUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Followers_AspNetUsers_FollowerUserId] FOREIGN KEY ([FollowerUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2021-05-14 21:50:15.3779|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Zingers] ADD CONSTRAINT [FK_Zingers_Zingers_Replying_Zinger_ID] FOREIGN KEY ([Replying_Zinger_ID]) REFERENCES [Zingers] ([Zinger_ID]) ON DELETE CASCADE;
