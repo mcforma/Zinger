@@ -24,7 +24,7 @@ I got hung up on stuff for too long when it wasn't working (e.g. manage user for
 
 **Where were you lucky?**
 
-I'm not sure there's really an appropriate answer to this question. My database is functional. Identity is mostly complete.
+I'm not sure there's really a best answer to this question. My database is functional. Identity is mostly complete. I have something to present even though its not really anywhere near what I would have liked.
 
 **What would you change / what do you know now that you wish you knew "then"?**
 
